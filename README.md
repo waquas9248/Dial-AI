@@ -19,13 +19,20 @@ These agents work together, with one handling the live interactions and event cl
    
 3. To view the dashboard (Run the following commands) :
    
-   a) #Start the Flask Server
+   a) Install Requirements:
+
+   pip install -r requirements.txt
+   
+   b) #Start the Flask Server:
+   
       python server.py
 
-   b) #Expose the Flask Server using Ngrok
+   c) #Expose the Flask Server using Ngrok:
+   
       ngrok http 8080
 
-   c) #Run the Streamlit App
+   d) #Run the Streamlit App:
+   
       streamlit run dashboard.py
 
 ### Agents from the Agentverse
