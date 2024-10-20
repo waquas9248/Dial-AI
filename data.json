@@ -1,0 +1,15 @@
+{
+    "wildlife": [
+        {
+            "case_number": 1,
+            "location": "Second Street, San Francisco",
+            "dispatch": "Animal control to remove the deer",
+            "situation": "Dead deer blocking the entire road",
+            "open_status": "no",
+            "stack_rank": 1
+        }
+    ],
+    "police": [],
+    "water": [],
+    "fire": []
+}
