@@ -4,7 +4,7 @@
 
 ### Description
 
-We carefully evaluated different models to ensure the best fit for our use case, understanding that when someone calls 911, they are already in distress. Selecting an empathetic voice model was crucial, and Vapi was the obvious choice for its ability to respond with human-like sensitivity. For real-time conversations, we integrated Vapi with Twilio through webhooks, allowing callers to speak directly into their phones as they would with a live operator.
+We carefully evaluated different models to ensure the best fit for our use case, understanding that when someone calls 911, they are already in distress. Selecting a low latency voice model was crucial, and Vapi was the obvious choice for its ability to respond with human-like sensitivity. For real-time conversations, we integrated Vapi with Twilio through webhooks, allowing callers to speak directly into their phones as they would with a live operator.
 
 We built the system using Fetch AI to manage the agents, with AgentVerse hosting them. In this setup, two agents communicate with each other in real time. When a call is placed, the first agent retrieves the chat ID and real-time transcripts using Twilio’s webhook. These transcripts are passed through the agent, which uses OpenAI’s API (GPT-4) to extract key information, organize it, and prioritize the emergency based on urgency. This agent communicates with another agent to pass the extracted information to the dispatcher console.
 
@@ -16,6 +16,16 @@ These agents work together, with one handling the live interactions and event cl
    This initiates an instance emulating a 9-1-1 call. 
 
 2. After conversing with the AI agent, you can view the extracted and classified data in the dispatcher dashboard.
+   
+3. To view the dashboard (Run the following commands) :
+   a) #Start the Flask Server
+      python server.py
+
+   b) #Expose the Flask Server using Ngrok
+      ngrok http 8080
+
+   c) #Run the Streamlit App
+      streamlit run dashboard.py
 
 ### Agents from the Agentverse
 
