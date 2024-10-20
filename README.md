@@ -19,9 +19,9 @@ These agents work together, with one handling the live interactions and event cl
    
 3. To view the dashboard (Run the following commands) :
    
-   a) Install Requirements:
+   a) #Install Requirements:
 
-   pip install -r requirements.txt
+      pip install -r requirements.txt
    
    b) #Start the Flask Server:
    
