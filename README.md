@@ -1,1 +1,1 @@
-# CalHacks-Agent
+# Dial AI
